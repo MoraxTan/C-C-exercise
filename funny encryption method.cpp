@@ -5,7 +5,8 @@ int main() {
 		while(n--) {
            scanf("%d",&x);
            m=x;
-           // every numbers whatever decimal or hexadecimal type,those change to binary and then find the counts of number '1'
+           // every numbers whatever decimal or hexadecimal type,
+           //those change to binary and then find the counts of number '1'
            for(a=0;x;) { //gets the counts of number'1' in decimal
             if(x%2==1) a++;
             x=x/2;
