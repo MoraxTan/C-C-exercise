@@ -21,7 +21,8 @@ bool handler(const string &strn, int set[], size_t size=12) {
         }
 
         for (int i = 0; i < str_len; i+=5) {
-            //get one %number with five numbers,let the %number group it with next five numbers
+            //get one %number with five numbers,
+            //let the %number group it with next five numbers
             for (int j = i; j < i+5; j++) {
                 if (j >= str_len) {
                   break;
