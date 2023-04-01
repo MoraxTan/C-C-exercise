@@ -14,7 +14,7 @@ int main()
         for(int i=a;i<=b;i++)
         {
             if(i%2==1){
-                ans += ans+i;    
+                ans += i;    
             }
         }
         printf("Case %d: %d\n",count++,ans);
