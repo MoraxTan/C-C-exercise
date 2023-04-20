@@ -1,36 +1,32 @@
-#include<bits/stdc++.h>
-
-using namespace std;
+#include<stdio.h>
+#include<string.h>
 int main()
 {
-    int n, count, temp, it;
-    bool a[35];
-    while(1)
+    int i;
+    
+    while(scanf("%d",&i) && i)
     {
-        scanf("%d", &n);
-        if(!n)  return 0;
-        count = 0;
-        temp = n;
-        it = 0;
-
-        while(temp)
+        int p = 0, k = 0;
+        char a[50]={0};
+        while(i>0)
         {
-            if(temp%2==0)
+            if(i%2)
             {
-                count++;
-                a[it++]=1;
+                a[k]='1';
+                p++;
             }
             else{
-                a[it++]=0;
+                a[k]='0';
             }
-            temp/=2;
+            k++;
+            i/=2;
         }
         printf("The parity of ");
-        for(int i = it - 1; i >= 0; i--)
+        for(int j=strlen(a)-1;j>=0;j--)
         {
-            printf("%d", a[i]);
+            printf("%c", a[j]);
         }
-        printf(" is %d (mod 2).\n", count);
+        printf(" is %d (mod 2).\n", p);
     }
     return 0;
 }
